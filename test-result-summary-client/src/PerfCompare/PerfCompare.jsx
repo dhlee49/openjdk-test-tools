@@ -403,7 +403,7 @@ export default class PerfCompare extends Component {
         let curAllVariantData = [];
         let curVariantData, curMetricTable, curMatchingTestVariantIndex, curMatchingTestMetricIndex;
         let curMetricName, curBaselineScore, curTestScore, curRawValues, curDiff, curBaselineCI, curTestCI, curColor, curMetricUnits, curHigherBetter;
-
+        console.log(this.state.benchmarkRuns.benchmarkRunBaseline);
         // Only compare variants that are in the baseline run
         for (let i = 0; i < this.state.benchmarkRuns.benchmarkRunBaseline.parsedVariants.length; i++) {
             // Must match the benchmark and variant names
